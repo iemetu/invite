@@ -1,0 +1,112 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="bday.css">
+</head>
+<body>
+
+
+
+
+<div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+    <div style="margin-top:-290px;">
+        <object width="420" height="315">
+           
+        </object>
+    </div>
+</div>
+
+<p id="start">
+
+<div class="starwars-demo">
+    <img src="star.svg" alt="Star" class="star">
+    <img src="wars.svg" alt="Wars" class="wars">
+	
+    <li><a href="invited.html"><h2 class="byline" id="byline">CJ FORCE AWAKENS</h2></a></li>
+  </div>
+  
+ <script>
+ var byline = document.getElementById('byline');  	// Find the H2
+bylineText = byline.innerHTML;										// Get the content of the H2
+bylineArr = bylineText.split('');									// Split content into array
+byline.innerHTML = '';														// Empty current content
+
+var span;					// Create variables to create elements
+var letter;
+
+for(i=0;i<bylineArr.length;i++){									// Loop for every letter
+  span = document.createElement("span");					// Create a <span> element
+  letter = document.createTextNode(bylineArr[i]);	// Create the letter
+  if(bylineArr[i] == ' ') {												// If the letter is a space...
+    byline.appendChild(letter);					// ...Add the space without a span
+  } else {
+		span.appendChild(letter);						// Add the letter to the span
+  	byline.appendChild(span); 					// Add the span to the h2
+  }
+}</script>
+
+
+
+
+
+  <!-- ALL CREDIT FOR THE SCROLLING TEXT GOES TO 
+     Craig Buckler
+     http://www.sitepoint.com/css3-starwars-scrolling-text/ 
+
+-->
+
+
+<div id="titles">
+    <div id="titlecontent">
+		<p class="center">In the not too distant future,<br>
+            on a planet close to you&hellip;
+			  <br>
+			  <br>
+			  <br></p>
+
+        <p class="center">EPISODE XXIX<br>CJ's TOURNAMENT</p>
+
+        <p>"It is a dark time for the Rebellion.
+		Although the Death Star has been destroyed, 
+		Imperial troops have driven the Rebel forces
+		from their hidden base and pursued them across
+		the galaxy.</p>
+
+        <p>Evading the dreaded Imperial Starfleet, 
+		a group of freedom fighters led by Luke Skywalker 
+		has established a new secret base on the remote 
+		ice world of Hoth.</p>
+
+        <p>The evil lord Darth Vader, obsessed with
+		finding young Skywalker, has dispatched thousands 
+		of remote probes into the far reaches of space.</p>
+
+        <p>You have been recruited to be apart of the Sith Lord's 
+		counsel. To celebrate a victory. A victory like non-other.</p>
+
+        <p>But first you must complete your training and prepare
+		for the victory that awaits us on May 16 2020 at 1500.</p>
+
+        <p>Please advise the Galletic Empire whether or not
+		you accept this challenge. And watch as we claim our victory&hellip;</p>
+
+       
+
+        
+
+        
+      
+    </div>
+
+</div>  
+  <audio controls>
+   <source src="stw.mp3" type="audio/mpeg">   
+  </audio>
+
+
+
+</body>
+ </html> 
+  
+  
+</html>

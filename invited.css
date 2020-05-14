@@ -1,0 +1,53 @@
+@import url(https://www.dafont.com/sf-distant-galaxy.font);
+
+
+
+body{
+	height: 100%;
+	margin: 0;
+	
+	/* The image used */
+  background: url("vg.gif");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "SF Distant Galaxy", Lato;
+ }
+
+#text {
+	font-size: 25px;
+    color: red;
+	text-shadow: 1pt 2pt white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text{
+	position: absolute;
+	bottom: 60%;
+	left: 16px;
+}
+.st{
+	position: absolute;
+	bottom: 23px;
+	right: 16px;
+	color: red;
+	text-decoration: none;
+	font-size: 30px;
+	text-shadow: 1pt 2pt black, 2pt 1pt yellow;
+}
+.dark-mode {
+  background: url(vg1.gif);
+  color: white;
+    /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
