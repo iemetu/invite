@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="invited.css">
+</head>
+<body>
+
+
+<div id="bg"></div>
+<div id="text" class="text"> 
+	<p>I SEE...<br>
+	YOU HAVE MADE YOUR CHOICE.<br>
+	COME TO THE DARK SIDE WITH ME<br>
+	THERE WILL BE CAKE.
+	<br>SATURDAY MAY 16TH AT 1500. <br>
+	CELEBRATE OUR VICTOR
+	<br>AT THE DARTH LORD'S HOME</p>
+	 <audio controls id="ab">
+   <source src="dvb.mp3" type="audio/mpeg">   
+  </audio>
+
+	
+	<button onclick="myFunction()"><p>R.S.V.P HERE WITH A TROOP</p></button>
+	<br>
+	<br>
+	<br>
+</div>	
+	
+
+	<li><a href="bday.html"><h2 class="st">START OVER</h2></a></li>
+
+	 <audio controls>
+   <source src="stm.mp3" type="audio/mpeg">   
+  </audio>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+    var x = document.getElementById("text");
+   if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+  
+  
+  
+</html>
